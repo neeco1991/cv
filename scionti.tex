@@ -34,13 +34,15 @@
 
 \urlstyle{same}
 
+\setlist[itemize]{noitemsep, topsep=4pt, partopsep=0pt, parsep=2pt}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
@@ -94,8 +96,14 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Nicola Scionti} & Email: \href{mailto:nicolascionti.dev@gmail.com}{nicolascionti.dev@gmail.com}\\
-  Full Stack Engineer
+  Full Stack Engineer & GitHub: \href{https://github.com/neeco1991}{neeco1991}\\
+  
 \end{tabular*}
+
+\section{Overview}
+I am a first-principle thinker who loves solving complex challenges. 
+My focus is inherently product-oriented: I leverage my full-stack skills to build robust solutions that directly address user needs and business goals. 
+I am most experienced in the TypeScript ecosystem but am always open to exploring the best technology for the job.
 
 
 %-----------EDUCATION-----------------
@@ -109,94 +117,108 @@
       {Bachelor's Degree in Physics}{Graduated: 2017}
   \resumeSubHeadingListEnd
 
-
-
-  \section{Overview}
-  I am a first-principle thinker who loves challenges and solving difficult problems.
-  I hold strong opinions, but I'm always ready to change them when presented with new evidence.
-  This mindset has helped me build a strong problem-solving framework while staying adaptable to changing boundary conditions.
-  In the first five years of my career, I prioritized developing a broad understanding of the overall product over specializing deeply in one area. For this reason, I identify as a Full Stack Engineer.
-  I am most experienced in the TypeScript ecosystem but am always open to exploring other technologies, whether for work or personal projects.
-
 %-----------EXPERIENCE-----------------
-\section{Freelancing Experience}
+\section{Experience}
 
 
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {\href{https://www.oaks.cloud/}{OAKS}}{Remote}
-      {Full Stack Engineer}{2020 -- Present}
+\resumeSubheading
+  {\href{https://forest-fire.emergency.copernicus.eu/}{European Commission, EFFIS Team} (via Arcadia)}{JRC Ispra, VA}
+  {Full Stack Engineer}{2023 -- Present}
+  \resumeItemListStart
+    \resumeItem{{\href{https://forest-fire.emergency.copernicus.eu/apps/effis.csv/}{Current Situation Viewer}}}
+      {An interactive map that shows the most up-to-date information on the current fire season in Europe and the Mediterranean area. This includes today's meteorological fire danger maps and forecasts, as well as daily updated maps of hot spots and fire perimeters.}
       \resumeItemListStart
-        
-      \resumeItem{Analytic Dashboard}
-          {A business intelligence dashboard designed to analyze the customer experience at Leroy Merlin. The data comes primarily from surveys, which are aggregated to present both well-known indicators like the Net Promoter Score and custom KPIs that emphasize specific business aspects. A classifier is also implemented to categorize feedback from customers. }
-          \resumeItemListStart
-            \resumeItem{Stack}{Postgres, NestJS, Angular, Kubernetes}
-          \resumeItemListEnd
-
-        \resumeItem{\href{https://custory.it/}{Analytic Dashboard}}
-          {Generalization of the previously described dashboard, with the aim to target all types of businesses, having data stored in various structures.}
-            \resumeItemListStart
-              \resumeItem{Stack}{Postgres, Next.js}
-            \resumeItemListEnd
-
-          \resumeItem{Chrome Extension}
-          {A tool to record and replicate user interactions with the web page.}
-            \resumeItemListStart
-              \resumeItem{Stack}{React}
-            \resumeItemListEnd
-          \resumeItemListEnd
-      
-
-    \resumeSubheading
-      {\href{https://forest-fire.emergency.copernicus.eu/}{EFFIS} - Arcadia}{Remote + JRC Ispra, VA}
-      {Full Stack Engineer}{2023 -- Present}
-      \resumeItemListStart
-        \resumeItem{\href{https://forest-fire.emergency.copernicus.eu/apps/effis.csv/}{Current Situation Viewer}}
-          {An interactive map that shows the most up-to-date information on the current fire season in Europe and the Mediterranean area. This includes today's meteorological fire danger maps and forecasts for up to 6 days, as well as daily updated maps of hot spots and fire perimeters.}
-          \resumeItemListStart
-            \resumeItem{Stack}{Postgres, Flask, Vue, Kubernetes}
-          \resumeItemListEnd
-        \resumeItem{\href{https://forest-fire.emergency.copernicus.eu/apps/dss.test/}{Decision Support System}}
-          {An interactive map that visualizes wildfires and their severity, while also displaying real-time data on the location and type of firefighting resources.}
-          \resumeItemListStart
-            \resumeItem{Stack}{Postgres, Flask, Vue, Kubernetes}
-          \resumeItemListEnd
-        \resumeItem{Workflows}
-          {Engineered scientific scripts that compute data for the previous two applications, then containerized, scheduled, and deployed them.}
-          \resumeItemListStart
-            \resumeItem{Stack}{Gitlab CI/CD}
-          \resumeItemListEnd
+        \resumeItem{Stack}{Postgres, Flask, Vue, Kubernetes, Bash,  Gitlab CI/CD, AWS}
+        \resumeItem{Impact}{Architected and delivered a high-availability system that processes and visualizes vast streams of real-time scientific data, making critical information accessible and understandable to a global audience.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {\href{https://quantaste.com/en/}{Quantaste}}{Remote}
-      {Full Stack Engineer}{2022 -- 2023}
-      \resumeItemListStart
-        \resumeItem{\href{https://quantaste.com/en/auth/sign-in}{Financial Dashboard}}
-          {Product used to track financial data, create portfolios and analize them from a correlation perspective.}
-          \resumeItemListStart
-            \resumeItem{Stack}{Postgres, Flask, Next.js, AWS}
-          \resumeItemListEnd
-      \resumeItemListEnd
-
- 
-  \resumeSubHeadingListEnd
+  \resumeItemListEnd
 
 
+\resumeSubheading
+{Leroy Merlin (via OAKS)}{Remote}
+{Full Stack Engineer}{2020 -- Present}
+\resumeItemListStart
 
+\resumeItem{Analytic Dashboard}
+{A business intelligence dashboard designed to analyze the customer experience at Leroy Merlin. The data comes primarily from surveys, which are aggregated to present both well-known indicators like the Net Promoter Score and custom KPIs that emphasize specific business aspects. }
+\resumeItemListStart
+\resumeItem{Stack}{Postgres, NestJS, Angular, Kubernetes}
+\resumeItem{Impact}{Provided the business with a centralized tool to translate complex customer feedback into actionable KPIs, directly influencing strategic decisions on customer experience.}
+\resumeItemListEnd
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://quantaste.com/en/}{Quantaste}}{Remote}
+{Full Stack Engineer}{2022 -- 2023}
+\resumeItemListStart
+\resumeItem{{Financial Dashboard}}
+{Product used to track financial data, create portfolios and analize them from a correlation perspective.}
+\resumeItemListStart
+\resumeItem{Stack}{Postgres, Flask, Next.js, AWS}
+\resumeItem{Impact}{Developed a platform that empowers users to make data-driven financial decisions by providing tools for portfolio tracking and sophisticated correlation analysis.}
+\resumeItemListEnd
+\resumeItemListEnd
+
+
+\resumeSubheading
+{\href{https://www.oaks.cloud/}{OAKS}}{Remote}
+{Full Stack Engineer}{2022}
+\resumeItemListStart
+
+\resumeItem{\href{https://custory.it/}{Analytic Dashboard}}
+{Multi-tenant abstraction of the previously described dashboard, with the aim to target all types of businesses.}
+\resumeItemListStart
+\resumeItem{Stack}{Postgres, Next.js}
+\resumeItem{Impact}{Helped adapt a single-tenant application into a scalable SaaS platform so that it could be offered to multiple clients.}
+\resumeItemListEnd
+\resumeItemListEnd
+
+
+
+
+
+\resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Personal Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {{Stock That Cheddar}}{Remote}
+  {Full Stack Engineer}{2023 -- Present}
   \resumeItemListStart
-    \resumeItem{\href{https://stockthatcheddar.com/}{Stock That Cheddar}}
+    \resumeItem{{Stock That Cheddar}}
       {Aims to be a platform that supports people in managing all aspects of personal finance, including cash flow monitoring, portfolio management, and net worth tracking.}
       \resumeItemListStart
-        \resumeItem{Stack}{Postgres, Golang, Sveltekit}
+        \resumeItem{Stack}{Sveltekit, Go, PostgreSQL, Ansible}
       \resumeItemListEnd
+   
   \resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+
+\section{Top skills}
+  \textbf{Languages}: TypeScript, Python
+  \textbf{Client}: Angular, Vue, Svelte, React
+  \textbf{Server}: NestJS, Flask, Sveltekit, NextJS
+  \textbf{DB}: PostgreSQL
+  \textbf{DevOps}: GitLab, Docker, Kubernetes, Linux
+  \textbf{Cloud}: AWS, GCP
+
+
+  
+% \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
+
+
+
+
+
